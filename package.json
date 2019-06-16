@@ -1,0 +1,90 @@
+{
+  "name": "react-images-z-index-fix",
+  "version": "1.0.4-alpha.5",
+  "description": "A mobile-friendly, highly customizable, carousel component for displaying media in ReactJS",
+  "main": "lib/index.js",
+  "jsnext:main": "dist/react-images.es.js",
+  "module": "dist/react-images.es.js",
+  "author": "Joss Mackison & the absolute bare minimum from Ryo Lambert",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "images",
+    "carousel",
+    "lightbox",
+    "gallery",
+    "modal"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "copy-webpack-plugin": "^5.0.3",
+    "css-loader": "^3.0.0",
+    "dotenv": "^8.0.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.13.0",
+    "flow-bin": "^0.101.0",
+    "gh-pages": "^2.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "istanbul": "^0.4.5",
+    "lint-staged": "^8.2.1",
+    "nps": "^5.9.5",
+    "nps-utils": "^1.7.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1",
+    "react-lorem-component": "^0.13.0",
+    "react-router-dom": "^5.0.1",
+    "react-syntax-highlighter": "^10.3.0",
+    "rollup": "^1.15.6",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^10.0.0",
+    "rollup-plugin-node-resolve": "^5.0.3",
+    "rollup-plugin-replace": "^2.2.0",
+    "rollup-plugin-uglify": "^6.0.2",
+    "style-loader": "^0.23.1",
+    "uglify-es": "^3.3.9",
+    "webpack": "^4.34.0",
+    "webpack-dev-server": "^3.7.1"
+  },
+  "dependencies": {
+    "a11y-focus-store": "^1.0.0",
+    "glam": "^5.0.1",
+    "raf-schd": "^4.0.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-full-screen": "^0.2.4",
+    "react-scrolllock": "^4.0.1",
+    "react-transition-group": "^4.1.1",
+    "react-view-pager": "^0.6.0"
+  },
+  "peerDependencies": {
+    "react": "^15.3.0 || ^16.8.6",
+    "react-dom": "^15.3.0 || ^16.8.6"
+  },
+  "scripts": {
+    "build": "nps build",
+    "watch": "nps build.watch",
+    "delete": "rimraf node_modules",
+    "lint": "eslint .",
+    "deploy": "cross-env NODE_ENV=production nps publish",
+    "start": "webpack-dev-server --progress",
+    "precommit": "flow check && lint-staged"
+  },
+  "files": [
+    "dist",
+    "lib",
+    "src"
+  ],
+  "lint-staged": {
+    "*.js": "eslint"
+  }
+}
